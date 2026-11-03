@@ -96,12 +96,12 @@ def option3():
         newProductPrice = int(input("Precio del producto:"))
         newProductStock = int(input("Cantidad de stock inicial: "))
 
-        numero = len(catalog) + 1
+        number = len(catalog) + 1
 
-        if numero < 10:
-            key = "P0" + str(numero)
+        if number < 10:
+            key = "P0" + str(number)
         else:
-            key = "P" + str(numero)
+            key = "P" + str(number)
 
         confirm = input("¿Deseas agregar el prodcuto? s/n ").lower()
 
