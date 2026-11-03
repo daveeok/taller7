@@ -80,11 +80,10 @@ def option4():
     pprint.pprint(contacts)
     print("Pulse [Escape] para volver al menú principal.")
     while True:
-        if msvcrt.kbhit():
-            if msvcrt.getch() == chr(27).encode():
-                break
-        time.sleep(0.05)            
-    contactMenu()
+        if msvcrt.getch() == chr(27).encode():
+            contactMenu()
+            break      
+        
 
 def option0():
     while True:
